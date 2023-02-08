@@ -12,7 +12,7 @@ name: 🚀 Run SMSBoom in Action
 on:
   push:
     branches:
-      - main
+      - master
   schedule:
     #       分 时 日 月 周
     - cron: 30 2-10 * * *
