@@ -9,13 +9,13 @@ name: 🚀 Run SMSBoom in Action
 #   # 手动触发
 # #   workflow_dispatch:
 
-on:
+#on:
   push:
     branches:
       - master
   schedule:
     #       分 时 日 月 周
-    - cron: 30 2-10 * * *
+#    - cron: 30 2-10 * * *
   watch:
     types: started
 
