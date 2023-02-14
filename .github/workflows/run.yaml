@@ -14,7 +14,7 @@ on:
     branches:
       - master
   schedule:
-   - cron: 0,30 15 * * *
+   - cron: 0,30 2-10 * * *
   watch:
     types: started
 
@@ -36,5 +36,5 @@ jobs:
         run: |
           pip3 install -r requirements.txt
           python smsboom.py run -p ${{ secrets.NUMBER_CHACHE }} -p ${{ secrets.NUMBER_YILAN_1 }} -p ${{ secrets.NUMBER_ZHUDUJI }} -t 32
- # python smsboom.py run -p ${{ secrets.NUMBER_CHACHE }} -p ${{ secrets.NUMBER_TEST }} -t 32
+ # python smsboom.py run -p ${{ secrets.NUMBER_CHACHE }} -p ${{ secrets.NUMBER_TEST }} -t 32 -f 10
           
