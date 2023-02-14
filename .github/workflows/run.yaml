@@ -9,13 +9,12 @@ name: 🚀 Run SMSBoom in Action
 #   # 手动触发
 # #   workflow_dispatch:
 
-#on:
+on:
   push:
     branches:
       - master
   schedule:
-    #       分 时 日 月 周
-#    - cron: 30 2-10 * * *
+   - cron: 0,30 15 * * *
   watch:
     types: started
 
@@ -36,6 +35,5 @@ jobs:
         # 此处可以自定义命令行运行参数.替换手机号
         run: |
           pip3 install -r requirements.txt
-          python smsboom.py run -t 64 -p 19883143896
-     # python smsboom.py run -t 64 -p 19883143896 -f 60 -i 30 -e
-     # python3 smsboom.py run -p ${{ secrets.NUMBER }} -t 32
+          python3 smsboom.py run -p ${{ secrets.NUMBER }} -p ${{ secrets.NUMBER_1 }} -t 32
+          
