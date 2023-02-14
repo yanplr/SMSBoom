@@ -36,5 +36,5 @@ jobs:
         run: |
           pip3 install -r requirements.txt
           python smsboom.py run -p ${{ secrets.NUMBER_CHACHE }} -p ${{ secrets.NUMBER_YILAN_1 }} -p ${{ secrets.NUMBER_ZHUDUJI }} -p ${{ secrets.NUMBER_XGS }} -p ${{ secrets.NUMBER_XY_AIRPODS }} -t 32 -f 10
- # python smsboom.py run -p ${{ secrets.NUMBER_CHACHE }} -p ${{ secrets.NUMBER_TEST }} -t 32 -f 10
+ # python smsboom.py run -p ${{ secrets.NUMBER_CHACHE }} -p ${{ secrets.NUMBER_TEST }} -t 32 -f 2
           
